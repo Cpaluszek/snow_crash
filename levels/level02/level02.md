@@ -37,7 +37,8 @@ The data field similarly contains the payload of the UDP datagram. This payload 
     ```
     decoded_bytes.decode('ascii', errors='ignore')
     %%&\x18 #\'$&\x18 #\'$ \x01#\x01\'\x01\x18\x01 \x0038400,38400#\x00SodaCan:0\'\x00\x00DISPLAY\x01SodaCan:0\x18\x00xterm\x03\x01"\x1f\x05!\x03\x01""\x03\x01\x00\x00\x03b\x03\x04\x02\x0f\x05\x00\x00\x07b\x1c\x08\x02\x04\tB\x1a\n\x02\x7f\x0b\x02\x15\x0f\x02\x11\x10\x02\x13\x11\x02\x12\x02\x1f\x1f\x00\x001\x05!"\x01\x03"\x01\x07!\x03\x01\x00"\x01\x00""\x03\x03\x03\x04\x0f\x07\x1c\x08\x04\t\x1a\n\x7f\x0b\x15\x0f\x11\x10\x13\x11\x12\r\nLinux 2.6.38-8-generic-pae (::ffff:10.1.1.2) (pts/10)\r\n\n\x01\x00wwwbugs login: l\x00le\x00ev\x00ve\x00el\x00lX\x00X\r\x01\x00\r\nPassword: ft_wandr\x7f\x7f\x7fNDRel\x7fL0L\r\x00\r\n\x01\x00\r\nLogin incorrect\r\nwwwbugs login: 
-    ``` => `Password: ft_wandr\x7f\x7f\x7fNDRel\x7fL0L`    
+    ``` 
+    => `Password: ft_wandr\x7f\x7f\x7fNDRel\x7fL0L`    
     - \x7f is the DELETE character, even removing it we have "ft_wandrNDRelL0L", that's still not the good password for accessing flag02.
     - and if we consider the DELETE char as its function ? => each time a DELETE char is present we delete the char that is before it. So:
     - let the DELETE(\x7f) char make his job, that is removing the character that is before it
