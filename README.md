@@ -17,3 +17,4 @@
 - [level01](./levels/level01/level01.md)
 - [level02](./levels/level02/level02.md)
 - [level03](./levels/level03/level03.md)
+- [level04](./levels/level04/level04.md)
