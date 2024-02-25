@@ -24,7 +24,9 @@
     - Decode bytes using ascii encoding and ignoring the error for not valid ascii characters
     - Print the decoded string containing the password "ft_wandrNDRelL0L" => still not the good password for accessing flag02
     - let the DELETE(\x7f) char make his job, that is removing the character that is before it
-    - isolate the correct password
+    - isolate the correct password: `ft_waNDReL0L`
+
+Done !
 
 
 
