@@ -24,9 +24,8 @@ The data field similarly contains the payload of the UDP datagram. This payload 
 - we can prelevate it from our host (or Docker continer) using `scp`protocol, as we do in this [script](scripts/extracting_packages_data_and_decoding.sh)
 - once in possesion of the file we can open it and read the packages data fields captured in it with wireshark
 (wireshark is not that intuitive. [Here the best tuto playlist we found](https://www.youtube.com/watch?v=OU-A2EmVrKQ&list=PLW8bTPfXNGdC5Co0VnBK1yVzAwSSphzpJ) )
-- we find "Password: " in package `No.43`. Bingo !
-
-## Actually we struggled in finding the password, so we went with tshark
+- we find the track of someone sending a password but not the password value:  "Password: " in package `No.43`.
+## to find the password value we went with tshark
 - tshark allows to extract the hexadecimal representation of the data fields of all the packages contained in the package capture: `tshark -Tfields -e data -r level02.pcap > captured_data.txt` =>
  [we do that in the script](scripts/extracting_packages_data_and_decoding.sh)
 - with the hexadecimal representation we can't do a lot
