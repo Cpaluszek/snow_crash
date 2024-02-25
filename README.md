@@ -13,7 +13,7 @@
 - `/root/levels`
 
 ## Levels
-- [level00](./level00/level00.md)
-- [level01](./level01/level01.md)
-- [level02](./level02/level02.md)
-- [level03](./level03/level03.md)
+- [level00](./levels/level00/level00.md)
+- [level01](./levels/level01/level01.md)
+- [level02](./levels/level02/level02.md)
+- [level03](./levels/level03/level03.md)
