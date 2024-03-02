@@ -21,3 +21,4 @@
 - [level05](./levels/level05/level05.md)
 - [level06](./levels/level06/level06.md)
 - [level07](./levels/level07/level07.md)
+- [level08](./levels/level08/level08.md)
