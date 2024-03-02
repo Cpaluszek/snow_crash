@@ -11,6 +11,7 @@ To exploit this vulnerability, we create our own script to retrieve the flag:
 - `echo '#!/bin/bash' > /tmp/exploit.sh`
 - `echo 'getflag > /tmp/flag' >> /tmp/exploit.sh`
 - `chmod +x /tmp/exploit.sh`
+then move it to /opt/openarenaserver, where the script execute the files
 
 ## Retrieval of Flag
 After two minutes, we check the `/tmp` directory and examine the contents of the newly created `flag` file, which contains the output of the `getflag` command executed by the script triggered by the cron job, that is the flag we need !
