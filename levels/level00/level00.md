@@ -24,6 +24,7 @@ We encountered a seemingly encrypted string. To decrypt it, we employed various 
 
 **Caesar Cipher:**
 Using an online tool like Cryptii, we applied a rotation of 15 characters (15 shift - = 11 shift +).
+Result: `nottoohardhere`
 
 This decrypted message provided us with a clue. We proceeded to log in as user flag00 using the command:
 
