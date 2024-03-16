@@ -25,12 +25,7 @@ time.sleep(2)
 
 # Decode bytes using ascii encoding and ignoring the error for not valid ascii characters
 decoded_string = decoded_bytes.decode('ascii', errors='ignore')
-newline_index = decoded_string.find("\n")
 
-if newline_index != -1:
-    decoded_length = len(decoded_string[:newline_index])
-else:
-    decoded_length = len(decoded_string)
 # Print the decoded string containing the password "ft_wandrNDRelL0L" => still not the good password for accessing flag02
 time.sleep(2)
 print(YELLOW + "<<<<< RESULT >>>>>" + RESET)
