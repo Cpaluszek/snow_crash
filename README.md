@@ -7,7 +7,8 @@
 - `docker run -it --rm --name kali kali`
 
 ## How to access the snow_crash server from within the Docker container
-- `ssh level00@$IP_ADDRESS -p 4242`
+- `ssh level00@$IP_ADDRESS -p <ssh_port>`
+Level00 password: `level00`
 
 ## How to run the scripts for the levels requiring that
 - `/root/levels`
